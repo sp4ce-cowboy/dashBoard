@@ -1,2 +1,2 @@
 # Executive
-A prototype of hierarchical life-organization system
+Prototype of a hierarchical, quantifiable life-organization system
