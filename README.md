@@ -6,7 +6,7 @@ Conceptualization of a productivity system that I have been playing around with 
 
 <img width="1103" alt="image" src="https://github.com/sp4ce-cowboy/executive/assets/19762596/30ff9403-cda2-437f-a335-f8a34d002a61">
 
-Having a quantified representation of things can make them less subjective and more actionable. Something that can be quantified can be tracked, and something that can be tracked can be improved. Something that can be tracked and improved can be gamified and incentivized as well. The concept is relatively straightforward, but the process of setting up the system might require some self-reflection into the things that constitute your life, regardless of how minor they might be.
+Having a quantified representation of things can make them less subjective and more actionable. Something that can be quantified can be tracked, and something that can be tracked can be improved. Something that can be tracked and improved can be gamified and incentivized as well. The concept is relatively straightforward, but the process of setting up the system might require some self-reflection into the things that constitute your life, regardless of how minor they might be. Everything from renewing your passport once every 10 years to walking your dog everyday. 
 
 ## The Concept
 
@@ -14,8 +14,8 @@ Having a quantified representation of things can make them less subjective and m
 - **Step 2:** Categorize these domains into sub-areas.
 - **Step 3:** Assign "directives" to each sub-area, and a weightage score for each.
 - **Step 4:** Address each directive as they become relevant.
-- **Step 5:** At any point in time, have a quantified representation of how "organized/intact/complete" your in life is.
-- **Step 6:** Reconfigure domains, sub-areas, directives and their weightage as needed.
+- **Step 5:** At any point in time, have a quantified representation of how "intact" your life is.
+- **Bonus:** Reconfigure domains, sub-areas, directives and their weightage as needed.
 
 ## Features
 
