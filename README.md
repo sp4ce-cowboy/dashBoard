@@ -32,14 +32,14 @@ Having a quantified representation of things can make them less subjective and m
 
 ### Statistics
 As shown below, different statistic metrics (overall, daily, entropy, critical) can be tabulated based on the specific combination of completed directives,
-providing different perspectises about the current state of affairs.
+providing different perspectives about the current state of affairs.
 
 <a>
-    <img height="270" align="center" alt="image" src="https://github.com/sp4ce-cowboy/executive/assets/19762596/b44a3595-c021-4fb4-b2df-39666b132f29">
+    <img height="280" align="center" alt="image" src="https://github.com/sp4ce-cowboy/executive/assets/19762596/b44a3595-c021-4fb4-b2df-39666b132f29">
 
 </a>
 <a>
-    <img height="270" align="center" alt="image" src="https://github.com/sp4ce-cowboy/executive/assets/19762596/03cdef86-3fc7-4565-aa6e-4735e1416ed7">
+    <img height="280" align="center" alt="image" src="https://github.com/sp4ce-cowboy/executive/assets/19762596/03cdef86-3fc7-4565-aa6e-4735e1416ed7">
 
 </a>
 
