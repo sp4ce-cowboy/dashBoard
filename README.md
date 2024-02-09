@@ -6,7 +6,6 @@ Conceptualization of a productivity system that I have been playing around with 
 
 <img width="1068" alt="image" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/86197e41-1af6-4707-926a-117ed7567fa4">
 
-
 Having a quantified representation of things can make them less subjective and more actionable. Something that can be quantified can be tracked, and something that can be tracked can be improved. Something that can be tracked and improved can be gamified and incentivized as well. The concept is relatively straightforward, but the process of setting up the system might require some self-reflection into the things that constitute your life, regardless of how minor they might be. Everything from renewing your passport once every 10 years to walking your dog everyday. 
 
 ## The Concept
