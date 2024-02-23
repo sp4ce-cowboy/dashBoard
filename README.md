@@ -58,15 +58,14 @@ _*Note: Directives can still be added/deleted from the .csv file directly_
 
 #### [Productivity Challenge Timer](https://productivitychallengetimer.com)
 <a>
-    <img height="650" align="center" alt="image" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/feb74a62-370e-4b3d-907f-1ef45f2358b4">
+    <img height="550" align="center" alt="image" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/feb74a62-370e-4b3d-907f-1ef45f2358b4">
 </a>
 <a>
-    <img height="650" align="center" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/eeb5c53b-bc13-49b5-aa64-684f323c42ed">
+    <img height="550" align="center" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/eeb5c53b-bc13-49b5-aa64-684f323c42ed">
 </a>
 <a>
-    <img height="650" align="center" alt="image" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/fa0c5b2e-fb04-47f5-8472-5b9f4b105e9a)">
+    <img height="550" align="center" alt="image" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/fa0c5b2e-fb04-47f5-8472-5b9f4b105e9a)">
 </a>
-
 
 
 ## Usage
