@@ -1,98 +1,97 @@
+<div align="center">
+
 # dashBoard
-A hierarchical, all-encompassing, quantifiable life organization system.
 
-## Overview
-Conceptualization of a productivity system that I have been playing around with for quite some time. This project is the prototypical programmatic implementation of such a system – a CLI application written entirely in Python (~500 LoC), in procedural progamming style. My proposed [Orbital '23](https://orbital.comp.nus.edu.sg) project was closely related to this idea, which can be found [here](docs/ORTBITAL_PROPOSAL.pdf)).
+**Your whole life as a scoreboard: weighted "directives" in a CSV, and one number for how intact
+things are.**<br>
+A terminal app in Python and pandas that tracks life domains, sub-areas and directives, scores
+them, and reports four indices (overall, daily, entropy and critical), with a timestamped journal
+and a day's task pad. My first program after my first programming course.
 
-<img width="1068" alt="image" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/86197e41-1af6-4707-926a-117ed7567fa4">
+[![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L225-L295)
+[![pandas](https://img.shields.io/badge/pandas-CSV-150458?logo=pandas&logoColor=white)](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L325-L349)
 
-Having a quantified representation of things can make them less subjective and more actionable. Something that can be quantified can be tracked, and something that can be tracked can be improved. Something that can be tracked and improved can be gamified and incentivized as well. The concept is relatively straightforward, but the process of setting up the system might require some self-reflection into the things that constitute your life, regardless of how minor they might be. Everything from renewing your passport once every 10 years to walking your dog everyday. 
+![Python](https://img.shields.io/badge/Python-450%20lines-555?style=flat-square)
+![Indices](https://img.shields.io/badge/indices-4-555?style=flat-square)
 
-## The Concept
+</div>
 
-- **Step 1:** Categorize your life into several domains.
-- **Step 2:** Categorize these domains into sub-areas.
-- **Step 3:** Assign "directives" to each sub-area, and a weightage score for each.
-- **Step 4:** Address each directive as they become relevant.
-- **Step 5:** At any point in time, have a quantified representation of how "intact" your life is.
-- **Bonus:** Reconfigure domains, sub-areas, directives and their weightage as needed.
+> [!NOTE]
+> This consolidated README page was added by
+> [Claude Opus 5.5](https://docs.anthropic.com/en/docs/claude-code) in Nov 2026 using my
+> [agentic-repo-analysis](https://github.com/sp4ce-cowboy/agentic-workflows) skill, from the
+> project's code, the release and my Orbital proposal. The project itself is from Dec 2022. The
+> original README, with more screenshots and the apps that inspired it, is in
+> **[README-ORIGINAL.md](README-ORIGINAL.md)**.
 
-## Features
+## At a glance
 
-### Main Features
-- View all directives
-- View directives sorted by their type, chronology, or completion
-- View statistics
-- Complete and Reset (i.e. mark and unmark) directives
+| | |
+|---|---|
+| **What** | A command-line life-organisation system: split life into domains and sub-areas, give each a weighted directive, tick them off, and see a fulfilment ratio |
+| **Context** | A personal project from the Dec 2022 winter break, after NUS CS1010E. The idea grew into my [Orbital 2023 proposal](ORBITAL_PROPOSAL.pdf), *P.O.S (Personal Organization System)* |
+| **Stack** | Python 3, pandas, CSV and plain-text files |
 
-### Additional Features
-- Display the Julian day (i.e. day of the year)
-- Set tasks for the day
-- Write/journal notes (which are automatically timestamped)
-- Read notes
+<img width="760" alt="dashBoard" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/86197e41-1af6-4707-926a-117ed7567fa4">
 
-<a>
-    <img height="280" align="center" alt="image" src="https://github.com/sp4ce-cowboy/dashboard/assets/19762596/c19c1fad-bc58-4f9d-93cf-18d24020c4a0">
-</a>
-<a>
-    <img height="280" align="center" src="https://github.com/sp4ce-cowboy/dashboard/assets/19762596/c1f6a814-3941-4f14-aa42-38be984630b0">
-</a>
+## The concept
 
-### Statistics
-As shown below, different statistic metrics (overall, daily, entropy, critical) can be tabulated based on the specific combination of completed directives,
-providing different perspectives about the current state of affairs.
+> *"What is not defined cannot be measured. What is not measured, cannot be improved."*
 
-<a>
-    <img height="280" align="center" alt="image" src="https://github.com/sp4ce-cowboy/executive/assets/19762596/b44a3595-c021-4fb4-b2df-39666b132f29">
-</a>
-<a>
-    <img height="280" align="center" src="https://github.com/sp4ce-cowboy/dashboard/assets/19762596/5dc15636-baff-4083-b422-1772196ae646">
-</a>
+1. Split your life into **domains** (Health, Organisation, Finance…) and those into sub-areas.
+2. Give each sub-area **directives** ("Drink 4 l of water daily", "Pay bills on time"), each with a
+   weight.
+3. Mark each directive **quotidian** (daily) or **entropic** (things that decay if ignored, like a
+   budget or a passport), and flag the **critical** ones.
+4. Complete them as they come up, and read the indices at any time.
 
-### Pending Features
-- Add/Delete directives from the application directly*
+## How it works
 
-_*Note: Directives can still be added/deleted from the .csv file directly_
+Everything lives in readable files beside the program, so deleting the app never deletes your data:
 
-### Some Inspiration
+| File | Holds |
+|---|---|
+| `directives.csv` | One row per directive: domain, entropy type, time of day, points earned, weight, critical flag ([a sample](https://github.com/sp4ce-cowboy/dashBoard/releases/tag/v1.0) ships with the release) |
+| `notepad.txt` | Journal entries, each stamped with the date and time |
+| `taskpad.txt` | Today's tasks |
 
-#### [Productivity Challenge Timer](https://productivitychallengetimer.com)
-<a>
-    <img height="550" align="center" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/feb74a62-370e-4b3d-907f-1ef45f2358b4">
-</a>
-<a>
-    <img height="550" align="center" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/eeb5c53b-bc13-49b5-aa64-684f323c42ed">
-</a>
-<a>
-    <img height="550" align="center" src="https://github.com/sp4ce-cowboy/dashBoard/assets/19762596/fa0c5b2e-fb04-47f5-8472-5b9f4b105e9a">
-</a>
+- **Indices** ([`Stats`](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L225-L295)):
+  points earned ÷ total weight, as a percentage, for all directives, the daily ones, the entropic
+  ones and the critical ones.
+- **Views:** all directives, or sorted by type, by time of day, or by completion, read and filtered
+  with pandas.
+- **Actions** ([`Execute`](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L325-L349),
+  `Reset`, `partReset`): complete directives by ID (full points), start a new day by resetting
+  the daily ones, or reset everything.
+- **Home screen:** the day of the year (Julian day), the date and time, and today's tasks.
 
+## Skills shown
 
-## Usage
-Running this program requires that you have `pandas` installed, for csv file manipulation.
-   
+| Skill | Where it shows (click the links for the code) | Docs |
+|---|---|---|
+| **Python**<br><img alt="Python" src="https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white"> | A menu-driven terminal app with nested functions and file I/O: [`main.py`](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py) | [Python docs](https://docs.python.org/3/) |
+| **Data handling with pandas** | Reading, filtering, updating and writing the directives CSV: [`Execute`](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L325-L349) | [pandas](https://pandas.pydata.org/docs/) |
+| **Metric design** | Four weighted fulfilment indices from one dataset: [`Stats`](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L225-L295) | |
+| **Product thinking** | User stories, a feature timeline and a ranking and gamification design in the [Orbital proposal](ORBITAL_PROPOSAL.pdf) | |
+
+## Coding stats
+
+None: written in Dec 2022, before I tracked my time, and put on GitHub in Jan 2024. `main.py` is
+451 lines.
+
+## On my resume
+
+**Skills:** Python · pandas · CSV data · CLI design · metric design · product proposal
+
+- Built a terminal life-organisation app in Python and pandas (450 lines) that stores weighted "directives" in a CSV and computes four fulfilment indices: overall, daily, entropic and critical.
+- Kept all data in plain CSV and text files beside the program (directives, a timestamped journal, a daily task pad), so it stays readable and survives the app being deleted.
+- Turned the idea into a proposal for NUS Orbital 2023: user stories, a scoring and ranking system, a feature timeline and a gamified, multi-user design.
+
+## Getting started
+
 ```sh
 pip3 install pandas
 ```
 
-1. Download the latest release from [here](https://github.com/sp4ce-cowboy/executive/releases/tag/v1.0)
-
-2. Unzip the downloaded release, ensure that all files are contained within the same folder.
-
-3. Navigate into the directory with
-
-```sh
-cd <PATH>
-```
-
-4. Run Dashboard
-
-```sh
-python3 main.py
-```
-
-All files are directly accessible in their text form. Thus, deleting the application will not delete your notes, tasks, or directives.
-
-## Notes
-_I wrote this CLI application during the winter break (december) of 2022, after my first [introductory programming course](https://nusmods.com/courses/CS1010E/programming-methodology), without any real SWE experience, so expect some subpar code quality and unhandled exceptions. I don't intend to fix it as this project is more of a proof-of-concept prototype than anything else, instead I'll be incorporating this idea of quantification/gamification into a future project._
-
+Download [the release](https://github.com/sp4ce-cowboy/dashBoard/releases/tag/v1.0) (it includes
+a sample `directives.csv`), unzip it, and run `python3 main.py` in that folder.
