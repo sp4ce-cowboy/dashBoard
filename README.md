@@ -6,7 +6,7 @@
 things are.**<br>
 A terminal app in Python and pandas that tracks life domains, sub-areas and directives, scores
 them, and reports four indices (overall, daily, entropy and critical), with a timestamped journal
-and a day's task pad. My first program after my first programming course.
+and a day's task pad. Written in Dec 2022.
 
 [![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L225-L295)
 [![pandas](https://img.shields.io/badge/pandas-CSV-150458?logo=pandas&logoColor=white)](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L325-L349)
