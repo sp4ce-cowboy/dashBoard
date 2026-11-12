@@ -12,7 +12,6 @@ and a day's task pad. Written in Dec 2022.
 [![pandas](https://img.shields.io/badge/pandas-CSV-150458?logo=pandas&logoColor=white)](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L325-L349)
 
 ![Python](https://img.shields.io/badge/Python-450%20lines-555?style=flat-square)
-![Indices](https://img.shields.io/badge/indices-4-555?style=flat-square)
 
 </div>
 
@@ -73,11 +72,6 @@ Everything lives in readable files beside the program, so deleting the app never
 | **Data handling with pandas** | Reading, filtering, updating and writing the directives CSV: [`Execute`](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L325-L349) | [pandas](https://pandas.pydata.org/docs/) |
 | **Metric design** | Four weighted fulfilment indices from one dataset: [`Stats`](https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L225-L295) | |
 | **Product thinking** | User stories, a feature timeline and a ranking and gamification design in the [Orbital proposal](ORBITAL_PROPOSAL.pdf) | |
-
-## Coding stats
-
-None: written in Dec 2022, before I tracked my time, and put on GitHub in Jan 2024. `main.py` is
-451 lines.
 
 ## On my resume
 
