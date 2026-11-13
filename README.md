@@ -64,7 +64,7 @@ Everything lives in readable files beside the program, so deleting the app never
   the daily ones, or reset everything.
 - **Home screen:** the day of the year (Julian day), the date and time, and today's tasks.
 
-## Skills shown
+## Skills covered
 
 | Skill | Where it shows (click the links for the code) | Docs |
 |---|---|---|
